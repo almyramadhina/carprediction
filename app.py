@@ -9,13 +9,13 @@ app = Flask(__name__)
 filename = 'model.pkl'
 model = pickle.load(open(filename, 'rb'))
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predictPrice():
     try:
         #get data
         year = request.form['year']
         enghp = request.form['enginehp']
-        engcyl = request.form['enginecyl']
+        engcyl = request.form['enginecylinder']
         
         x_test = [[year, enghp, engcyl]]
     

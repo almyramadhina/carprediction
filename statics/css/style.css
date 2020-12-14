@@ -26,7 +26,7 @@ h1 {
   height: 10px;
   border-radius: 50%;
   content: '';
-  background-color: #7789f0;
+  background-color: #b5e4ff;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -94,7 +94,7 @@ h1 {
 }
 
 body {
-  background-color: #D1D7DC;
+  background-color: #c8ebff;
   font-family: 'Fira Sans', sans-serif;
 }
 
@@ -142,9 +142,9 @@ a.button {
     font: normal normal 300 1.3em "Fira Sans";
     text-decoration: none;
 
-    color:  #5f71db;
+    color:  #389ad3;
     brackground-color: transparent;
-    border: 3px solid #5f71db;
+    border: 2px solid #389ad3;
     border-radius: 100px;
 
     padding: 0.3em 1.2em;
@@ -154,7 +154,7 @@ a.button {
     background-image: linear-gradient(
         to right,
         transparent 50%,
-        rgba #5f71db 50%
+        rgba #389ad3 50%
     );
     transition: background-position 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0.1s,
         color 0.5s ease 0s, background-color 0.5s ease;
@@ -162,7 +162,7 @@ a.button {
 
 a.button:hover {
     color: rgba(255, 255, 255, 1);
-    background-color:  #5f71db;
+    background-color:  #389ad3;
     background-position: -100% 100%;
 }  
 .cards {

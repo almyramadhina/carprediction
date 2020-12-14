@@ -12,6 +12,19 @@ function sendForm() {
     };
 
     console.log(data);
-    var reqdata = JSON.stringify(data);
-    
-  }
+        
+    $.ajax({
+                    url: '/predict',
+                    type:'POST',
+                    dataType: 'json',
+                    // contentType: "application/json; charset=utf-8",
+                    data: reqdata,
+                    success: function(response) {
+                        console.log(data)
+						console.log("berhasil" + response)
+                    },
+                    error: function(response) {
+                        console.log(response);
+				    }    
+    })
+}

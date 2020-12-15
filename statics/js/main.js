@@ -11,17 +11,20 @@ function sendForm() {
         "enginecylinder": cyl
     };
 
-    console.log(data);
         
     $.ajax({
                     url: '/predict',
                     type:'POST',
                     dataType: 'json',
                     // contentType: "application/json; charset=utf-8",
-                    data: reqdata,
+                    data: data,
                     success: function(response) {
                         console.log(data)
-						console.log("berhasil" + response)
+						console.log(response)
+                        hasil = '';
+                        var result = document.getElementById('result')
+                        hasil = '<p style="font-size:150%;"> Prediction cost of your car is $'+ response.result +'</p>';
+                        result.innerHTML = hasil;
                     },
                     error: function(response) {
                         console.log(response);

@@ -20,8 +20,8 @@ def predictPrice():
         x_test = [[year, enghp, engcyl]]
     
         #fit transform inputs from user
-        sc_x=StandardScaler()
-        x=sc_x.fit_transform(x_test)
+        #sc_x=StandardScaler()
+        #x=sc_x.fit_transform(x_test)
 
         #make prediction
         pred = model.predict(x)

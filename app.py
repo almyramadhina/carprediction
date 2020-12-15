@@ -28,7 +28,11 @@ def predictPrice():
 
         #show prediction
         if pred is not None:
-            return jsonify(pred)
+            retval = {
+                'status' : 'sukses',
+                'result' : str(pred[0])
+            }
+            return jsonify(retval)
         else:
             return "Kosong"
 

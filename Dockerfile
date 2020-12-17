@@ -36,4 +36,4 @@ RUN pip3 install -r requirements.txt
 
 ADD . /app
 
-CMD python3 main.py
+CMD python3 app.py

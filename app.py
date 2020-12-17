@@ -24,7 +24,7 @@ def predictPrice():
         #x=sc_x.fit_transform(x_test)
 
         #make prediction
-        pred = model.predict(x)
+        pred = model.predict(x_test)
 
         #show prediction
         if pred is not None:
